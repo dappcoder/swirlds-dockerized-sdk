@@ -5,7 +5,7 @@ Prerequisites: `docker` and `docker-compose`
 ``` 
 git clone git@github.com:dappcoder/swirlds-dockerized-sdk.git 
 ```
-2. Go to `./swirlds-sdk/config.txt` and update the external IP of the participants. Replace `192.168.1.123` with your local IP address. 
+2. Go to `./swirlds-sdk/config.txt` and update the external IPs of the participants. Replace `192.168.1.123` with your local IP address. 
 3. Download Hashgraph Swirlds SDK. 
 ``` https://www.swirlds.com/download/ ```
 4. Unzip to desired location.
@@ -13,7 +13,9 @@ git clone git@github.com:dappcoder/swirlds-dockerized-sdk.git
 6. Run it
 ``` docker-compose up ```
 
-In less than a minute, you should now have 4 instances (Alice, Bob, Carol, Dave) of Hashgraph demo app 'StatsDemo' running in separate containers, being connected through a docker network.
+Wait until the 4 containers log `This computer has an internal IP address`. 
+
+You should now have 4 instances (Alice, Bob, Carol, Dave) of Hashgraph demo app 'StatsDemo' running in separate containers, being connected through a docker network.
 
 To see statistics results of the running Hashgraph network do the following:
 
