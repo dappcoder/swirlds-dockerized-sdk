@@ -3,7 +3,7 @@ version: '3'
 services:
   swirlds-node01:
     build: './swirlds-sdk'
-    restart: always
+    restart: on-failure
     ports:
      - "50204:50204"
     networks:
@@ -11,7 +11,7 @@ services:
         ipv4_address: 10.5.0.4
   swirlds-node02:
     build: './swirlds-sdk'
-    restart: always
+    restart: on-failure
     ports:
      - "50205:50205"
     networks:
@@ -19,7 +19,7 @@ services:
         ipv4_address: 10.5.0.5
   swirlds-node03:
     build: './swirlds-sdk'
-    restart: always
+    restart: on-failure
     ports:
      - "50206:50206"
     networks:
@@ -27,7 +27,7 @@ services:
         ipv4_address: 10.5.0.6
   swirlds-node04:
     build: './swirlds-sdk'
-    restart: always
+    restart: on-failure
     ports:
      - "50207:50207"
     networks:
